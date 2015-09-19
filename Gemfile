@@ -6,3 +6,5 @@ gem 'sinatra-param', require: 'sinatra/param'
 gem 'unicorn'
 
 gem 'rmagick'
+
+gem 'byebug'

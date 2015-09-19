@@ -2,22 +2,22 @@ require 'rmagick'
 
 module ImageService
 
-  def self.generate_image(text, format: 'PNG')
+  def self.generate_image(cards, expand: false, format: 'PNG')
 
-    width = 54 * text.length
-    image = Magick::Image.new(width, 62) { self.background_color = "white" }
+    filesToLoad = cards.map { |card| FileNameService.file_name card }
+
+    imageList = Magick::ImageList.new *filesToLoad
+
+    if !expand
+      imageList.each_with_index do |image, index|
+        unless index == imageList.size - 1
+          image.crop! Magick::WestGravity, image.columns / 3, image.rows
+        end
+      end
+    end
+
+    image = imageList.append false
     image.format = format
-
-    txt = Magick::Draw.new
-
-    txt.text(1,1, text)
-    txt.font = './vendor/fonts/playing-cards-webfont.ttf'
-    txt.encoding = 'Unicode'
-    txt.gravity = Magick::NorthGravity
-    txt.pointsize = 50
-    txt.font_weight = Magick::BoldWeight
-
-    txt.draw(image)
 
     image.to_blob
   end

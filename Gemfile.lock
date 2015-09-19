@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (6.0.2)
     kgio (2.9.3)
     rack (1.6.4)
     rack-protection (1.5.3)
@@ -23,6 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   rmagick
   sinatra
   sinatra-param

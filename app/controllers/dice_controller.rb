@@ -6,9 +6,9 @@ class DiceController < ApplicationController
   end
 
   get '/:dice.png' do
-    param :dice, String, required: true, format: /^[1-6]{1,5}$/
+    param :dice, Array, required: true, delimiter: '-'
 
-    ImageService.generate_image params[:dice]
+    ImageService.generate_image params[:dice], expand: true
   end
 
 end
