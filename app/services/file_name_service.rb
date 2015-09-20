@@ -1,4 +1,3 @@
-require 'byebug'
 module FileNameService
 
   def self.file_name(card)
@@ -15,6 +14,10 @@ module FileNameService
       folder = "diamonds"
     when "C"
       folder = "clubs"
+    when "M"
+      folder = "misc"
+    when "F"
+      folder = "dice"
     else
       folder = "misc"
     end
