@@ -6,12 +6,8 @@ class CardsController < ApplicationController
   end
 
   get '/:cards' do
-    param :cards, Array, required: true, delimiter: "-"
+    param :cards, Array, required: true, delimiter: "-", format: /^[0-9A-Z]{1,2}[SDHCM]$/
     param :expand, Boolean, default: false
-
-    if !params[:cards].map{ |c| c =~ /^[0-9A-Z]{1,2}[SDHCM]$/ }.reduce{ |a,b| a && b }
-      raise Sinatra::Param::InvalidParameterError
-    end
 
     ImageService.generate_image params[:cards], expand: params[:expand]
   end

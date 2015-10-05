@@ -14,12 +14,18 @@ RSpec.describe 'CardsController' do
       let(:card_param) { '5Y' }
 
       it 'throws an invalid parameter error' do
-        expect { get_cards }.to raise_error Sinatra::Param::InvalidParameterError
+        get_cards
+        expect(last_response.status).to eq 400
       end
     end
 
     context 'valid parameter provided' do
       let(:card_param) { '10H' }
+
+      it 'returns a 200 response code' do
+        get_cards
+        expect(last_response.status).to eq 200
+      end
 
       it 'returns a png image' do
         get_cards

@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rack'
 gem 'sinatra', require: 'sinatra/base'
-gem 'sinatra-param', require: 'sinatra/param'
+gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
 gem 'unicorn'
 

@@ -14,12 +14,18 @@ RSpec.describe 'DiceController' do
       let(:dice_param) { '5Y' }
 
       it 'throws an invalid parameter error' do
-        expect { get_dice }.to raise_error Sinatra::Param::InvalidParameterError
+        get_dice
+        expect(last_response.status).to eq 400
       end
     end
 
     context 'valid parameter provided' do
       let(:dice_param) { '5F' }
+
+      it 'returns a 200 response code' do
+        get_dice
+        expect(last_response.status).to eq 200
+      end
 
       it 'returns a png image' do
         get_dice
