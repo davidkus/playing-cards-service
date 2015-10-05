@@ -1,9 +1,5 @@
 # config.ru
-require 'sinatra/base'
-require './app/controllers/application_controller.rb'
-
-# pull in the helpers and controllers
-Dir.glob('./app/{services,controllers}/*.rb').each { |file| require file }
+require "./config/environment"
 
 # map the controllers to routes
 map('/cards') { run CardsController }
