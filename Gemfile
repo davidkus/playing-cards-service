@@ -1,6 +1,7 @@
 ruby '2.2.3'
 source 'https://rubygems.org'
 
+gem 'rack'
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param'
 
@@ -8,4 +9,12 @@ gem 'unicorn'
 
 gem 'rmagick'
 
-gem 'byebug'
+group :development, :test do
+  gem 'byebug'
+end
+
+group :test do
+  gem "fuubar"
+  gem "rspec"
+  gem "rack-test"
+end

@@ -1,5 +1,3 @@
-require 'rmagick'
-
 module ImageService
 
   def self.generate_image(cards, expand: false, format: 'PNG')
