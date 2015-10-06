@@ -17,4 +17,6 @@ group :test do
   gem "fuubar"
   gem "rspec"
   gem "rack-test"
+
+  gem "codeclimate-test-reporter", require: nil
 end
