@@ -1,0 +1,10 @@
+before_script:
+  - gem install bundler
+  - bundle install
+  - RAILS_ENV=test bundle exec rake db:create
+
+rspec:
+  script:
+    - RAILS_ENV=test bundle exec rspec
+  tags:
+    - ruby
