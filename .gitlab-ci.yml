@@ -1,4 +1,4 @@
-image: ruby:2.3.0-alpine
+image: ruby:2.3.0-slim
 
 before_script:
   - gem install bundler
