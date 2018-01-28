@@ -13,9 +13,28 @@ RSpec.describe 'CardsController' do
     context 'invalid parameter provided' do
       let(:card_param) { '5Y' }
 
-      it 'throws an invalid parameter error' do
+      it 'returns a 400' do
         get_cards
         expect(last_response.status).to eq 400
+      end
+
+      it 'returns text/plain' do
+        get_cards
+        expect(last_response.content_type).to start_with 'text/plain'
+      end
+    end
+
+    context 'invalid file provided' do
+      let (:card_param) { '1S' }
+
+      it 'returns a 400' do
+        get_cards
+        expect(last_response.status).to eq 400
+      end
+
+      it 'returns text/plain' do
+        get_cards
+        expect(last_response.content_type).to start_with 'text/plain'
       end
     end
 
@@ -29,7 +48,7 @@ RSpec.describe 'CardsController' do
 
       it 'returns a png image' do
         get_cards
-        expect(last_response.content_type).to eq('image/png')
+        expect(last_response.content_type).to eq 'image/png'
       end
     end
 
