@@ -1,8 +1,19 @@
 language: ruby
-script: bundle exec rspec
+
 rvm:
-- 2.4.1
-addons:
-  code_climate:
-    repo_token:
-      secure: "bT1akww9+1J6thy0CI3K3DsOPeGlQW6uM8ukys91GKVDNc/6T4IBg4YG5tazUdzfprM7E6tl1WY7qJRl0iXb/6FbEr4iBYSIX4DIs4GBXDOckxSAuIEJIwLRE02nq9R6vzJ4HZmtE247ttVjTB9kRbz6zXnDp9zeImxazJkjmbJGZW0A0QtMBwhbddS9bLm4O6uEwFdDlJJbzRY4xp+REB4fGwVLbDuATT/6dDjiCLReO11IJTn2QyfsCPjH2GpgSF6QKsqns0QckfjbGttjkEH6f2J/pL0g01sQaPLy0I2aHXTnpg7CP0ukYwVQ/VslL4q7k3NI9Zb/h6aa4VP4Ssz6Uh7m9RpkTMohgNI415euLsyGXVvWj5T66vKjHj7LEZJHfLN3byG7X6nXZEjaUUsBbsI9K7aKRWA4JxdlhmPye9PQru6BTkUNpTPQqCNjxZZxyQJ9SgQX+XG5f3B3wsMT4nc8fha5V7j3Dkvxdzu0btYDtyTfg/SAqg91XHf2VAiuw5k9bToLJrTZwop1hJH+vUtOvN3/zzZX+L9WQHnzbKralADFTBBeOIuop9rCygNF1adsd3hJQ5oSHX5IbQ3Y5rNNQGi/MfRao6SGwfV3qq0hpEM9/ZD039hx+1j63yrPym6vCsqgsdjL2OQxqXIyRoOdDCp2/g/nOz75/og="
+  - 2.4.1
+
+env:
+  global:
+    secure: liUrDmSB23V5BAhUDopRnjfWYm2JFs9uqSLPbsA2AXU19ll54mCnFI7WRLy2L84XAteGKlEqis6cvBJ7LmtD/0pdpzvZW9E/QoYU8+NyV8qbAYxXwfWoBwcDufOI2dPbqF3qAmqszulRkBoPNK4yteL+OnV9XsK2FYyVAEQg2ylXOezlBHeEdIXnQsBTTr1Qw8lGZfQdUXhX2/cCMs47ykb2+DplpTsbamqQVVd8zCQwg9yGpMFb8kdAbhopNUqMYPe8v1T9MvfjB03I+7pl9ImmDLKJoS4bWnMF9VMqjsf92qY1vFfzPx06uft3YCycln0icoXao/4uRZ1M5//hLG3t+KT50Pw/9ORA/ZnWg4zLBNr4hZgzuUlQ8F4fFNXLu2E2l0U0Yg7gF0yJzuvIdZO/kKir+y+paVw1uJ4K5Q/K8tQlskPi1/w+YexraJQq4bkrrCGyr/YMcRWD4aptL4ZQd9H7q3VXNTef8uezoHi8YmP86Z9dPwqqFZw0poxHbXmYvX4eXAA3llqsdxUEJIcna9xm/Ycvc/dzMOisonwImdozb6EIxz0d0cGF3CM4WJJ0bNYwk1uRbxBK/CDrgnJ50OaKy+OgL2gAbeT4WUtzkdKdS+pTWpg19ot3hhjIEj04IlWWOVcMSict/MYncpKCVnPefuRC1BEO2EYWSVY=
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - bundle exec rspec
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
