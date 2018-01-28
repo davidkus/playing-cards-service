@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/davidkus/sinatra-param.git
-  revision: 755a3c54585639415c33de0b6101c0029aa7ef43
+  revision: d7790e4f095788f4114f174a8c2087112a522901
   specs:
     sinatra-param (1.4.0)
       sinatra (~> 1.3)
@@ -8,50 +8,49 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (6.0.2)
-    codeclimate-test-reporter (0.4.8)
-      simplecov (>= 0.7.1, < 1.0.0)
-    diff-lcs (1.2.5)
+    byebug (10.0.0)
+    codeclimate-test-reporter (1.0.8)
+      simplecov (<= 0.13)
+    diff-lcs (1.3)
     docile (1.1.5)
-    fuubar (2.0.0)
-      rspec (~> 3.0)
+    fuubar (2.3.1)
+      rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
-    json (1.8.3)
-    kgio (2.10.0)
-    rack (1.6.4)
+    json (2.1.0)
+    kgio (2.11.1)
+    rack (1.6.8)
     rack-protection (1.5.3)
       rack
-    rack-test (0.6.3)
-      rack (>= 1.0)
-    raindrops (0.15.0)
-    rmagick (2.15.4)
-    rspec (3.3.0)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-    rspec-core (3.3.2)
-      rspec-support (~> 3.3.0)
-    rspec-expectations (3.3.1)
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
+    raindrops (0.19.0)
+    rmagick (2.16.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-mocks (3.3.2)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-support (3.3.0)
-    ruby-progressbar (1.7.5)
-    simplecov (0.10.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.0)
+    ruby-progressbar (1.9.0)
+    simplecov (0.13.0)
       docile (~> 1.1.0)
-      json (~> 1.8)
+      json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
-    sinatra (1.4.6)
-      rack (~> 1.4)
+    simplecov-html (0.10.2)
+    sinatra (1.4.8)
+      rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-    tilt (2.0.1)
-    unicorn (4.9.0)
+    tilt (2.0.8)
+    unicorn (5.4.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
 
 PLATFORMS
@@ -65,9 +64,13 @@ DEPENDENCIES
   rack-test
   rmagick
   rspec
+  simplecov
   sinatra
   sinatra-param!
   unicorn
 
+RUBY VERSION
+   ruby 2.4.1p111
+
 BUNDLED WITH
-   1.10.6
+   1.16.1

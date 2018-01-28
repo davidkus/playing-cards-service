@@ -1,4 +1,7 @@
-ruby '2.3.0'
+#ruby=ruby-2.4.1
+#ruby-gemset=playing-cards-service
+
+ruby '2.4.1'
 source 'https://rubygems.org'
 
 gem 'rack'
@@ -17,6 +20,6 @@ group :test do
   gem "fuubar"
   gem "rspec"
   gem "rack-test"
-
+  gem 'simplecov', :require => false
   gem "codeclimate-test-reporter", require: nil
 end
