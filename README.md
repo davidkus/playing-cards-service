@@ -2,6 +2,23 @@
 
 A web service that serves up images of playing card hands and dice rolls.
 
+## Running
+
+Install dependencies:
+```
+bundle install
+```
+
+Run:
+```
+heroku local web
+```
+
+Run tests:
+```
+rspec
+```
+
 ## License
 
 See LICENSE.txt
