@@ -4,13 +4,13 @@
 ruby '2.4.1'
 source 'https://rubygems.org'
 
-gem 'rack'
-gem 'sinatra', require: 'sinatra/base'
+gem 'rack', '1.6.8'
+gem 'sinatra', '1.4.8', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
-gem 'unicorn'
+gem 'unicorn', '5.4.0'
 
-gem 'rmagick'
+gem 'rmagick', '2.16.0'
 
 group :development, :test do
   gem 'byebug'
