@@ -4,7 +4,7 @@
 ruby '2.4.1'
 source 'https://rubygems.org'
 
-gem 'rack', '1.6.11'
+gem 'rack', '1.6.13'
 gem 'sinatra', '1.4.8', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 

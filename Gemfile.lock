@@ -18,7 +18,7 @@ GEM
       ruby-progressbar (~> 1.4)
     json (2.1.0)
     kgio (2.11.1)
-    rack (1.6.11)
+    rack (1.6.13)
     rack-protection (1.5.5)
       rack
     rack-test (0.8.2)
@@ -60,7 +60,7 @@ DEPENDENCIES
   byebug
   codeclimate-test-reporter
   fuubar
-  rack (= 1.6.11)
+  rack (= 1.6.13)
   rack-test
   rmagick (= 2.16.0)
   rspec
