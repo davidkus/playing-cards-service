@@ -24,6 +24,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    require_all (3.0.0)
     rmagick (2.16.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
@@ -59,6 +60,7 @@ DEPENDENCIES
   puma (= 4.3.1)
   rack (= 1.6.13)
   rack-test
+  require_all (~> 3.0)
   rmagick (= 2.16.0)
   rspec
   simplecov

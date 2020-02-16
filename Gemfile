@@ -12,6 +12,8 @@ gem 'puma', '4.3.1'
 
 gem 'rmagick', '2.16.0'
 
+gem 'require_all', '~> 3.0'
+
 group :development, :test do
   gem 'byebug'
 end
