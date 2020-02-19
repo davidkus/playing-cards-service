@@ -1,7 +1,7 @@
 #ruby=ruby-2.6
 #ruby-gemset=playing-cards-service
 
-ruby '2.6.3'
+ruby '2.6'
 source 'https://rubygems.org'
 
 gem 'rack', '1.6.13'
