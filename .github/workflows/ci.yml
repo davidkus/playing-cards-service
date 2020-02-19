@@ -12,11 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-        ci_node_toal: [2]
-        ci_node_index: [0, 1]
-
     steps:
       - uses: actions/checkout@v1
 
