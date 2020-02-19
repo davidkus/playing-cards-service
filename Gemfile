@@ -1,4 +1,4 @@
-#ruby=ruby-2.6.3
+#ruby=ruby-2.6
 #ruby-gemset=playing-cards-service
 
 ruby '2.6.3'
