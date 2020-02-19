@@ -22,6 +22,6 @@ group :test do
   gem "fuubar"
   gem "rspec"
   gem "rack-test"
-  gem 'simplecov', :require => false
+  gem 'simplecov', '0.17.1', :require => false
   gem "codeclimate-test-reporter", require: nil
 end

@@ -16,6 +16,7 @@ GEM
     fuubar (2.5.0)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
+    json (2.3.0)
     nio4r (2.5.2)
     puma (4.3.1)
       nio4r (~> 2.0)
@@ -40,10 +41,11 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
     ruby-progressbar (1.10.1)
-    simplecov (0.18.2)
+    simplecov (0.17.1)
       docile (~> 1.1)
-      simplecov-html (~> 0.11)
-    simplecov-html (0.12.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -63,12 +65,12 @@ DEPENDENCIES
   require_all (~> 3.0)
   rmagick (= 2.16.0)
   rspec
-  simplecov
+  simplecov (= 0.17.1)
   sinatra (= 1.4.8)
   sinatra-param!
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
