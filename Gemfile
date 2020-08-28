@@ -3,8 +3,8 @@
 
 source 'https://rubygems.org'
 
-gem 'rack', '1.6.13'
-gem 'sinatra', '1.4.8', require: 'sinatra/base'
+gem 'rack', '2.2.3'
+gem 'sinatra', '2.0.8.1', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
 gem 'puma', '4.3.3'
