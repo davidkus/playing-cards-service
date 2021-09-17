@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/davidkus/sinatra-param.git
+  remote: https://github.com/davidkus/sinatra-param.git
   revision: 68c82da296f2ad9f410b00dd64cfe195bb71d9d2
   specs:
     sinatra-param (1.6.0)
@@ -8,51 +8,51 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (11.1.1)
+    byebug (11.1.3)
     codeclimate-test-reporter (1.0.7)
       simplecov
-    diff-lcs (1.3)
-    docile (1.3.2)
-    fuubar (2.5.0)
+    diff-lcs (1.4.4)
+    docile (1.4.0)
+    fuubar (2.5.1)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
-    json (2.3.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.7)
-    puma (5.3.1)
+    nio4r (2.5.8)
+    puma (5.4.0)
       nio4r (~> 2.0)
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.1.0)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     require_all (3.0.0)
-    rmagick (2.16.0)
-    rspec (3.9.0)
-      rspec-core (~> 3.9.0)
-      rspec-expectations (~> 3.9.0)
-      rspec-mocks (~> 3.9.0)
-    rspec-core (3.9.1)
-      rspec-support (~> 3.9.1)
-    rspec-expectations (3.9.0)
+    rmagick (4.2.2)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.9.0)
-    rspec-mocks (3.9.1)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.9.0)
-    rspec-support (3.9.2)
-    ruby-progressbar (1.10.1)
-    ruby2_keywords (0.0.2)
-    simplecov (0.17.1)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
+    ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
+    simplecov (0.21.2)
       docile (~> 1.1)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.2)
-    sinatra (2.0.8.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.3)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
 
@@ -63,15 +63,18 @@ DEPENDENCIES
   byebug
   codeclimate-test-reporter
   fuubar
-  puma (= 5.3.1)
+  puma (= 5.4.0)
   rack (= 2.2.3)
   rack-test
   require_all (~> 3.0)
-  rmagick (= 2.16.0)
+  rmagick (= 4.2.2)
   rspec
-  simplecov (= 0.17.1)
-  sinatra (= 2.0.8.1)
+  simplecov (= 0.21.2)
+  sinatra (= 2.1.0)
   sinatra-param!
 
+RUBY VERSION
+   ruby 3.0.2p107
+
 BUNDLED WITH
-   1.17.3
+   2.2.22
