@@ -21,7 +21,7 @@ GEM
     nio4r (2.5.8)
     puma (5.6.4)
       nio4r (~> 2.0)
-    rack (2.2.3)
+    rack (2.2.3.1)
     rack-protection (2.2.0)
       rack
     rack-test (1.1.0)
@@ -65,7 +65,7 @@ DEPENDENCIES
   codeclimate-test-reporter
   fuubar
   puma (= 5.6.4)
-  rack (= 2.2.3)
+  rack (= 2.2.3.1)
   rack-test
   require_all (~> 3.0)
   rmagick (= 4.2.3)
