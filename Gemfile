@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read(".ruby-version").strip
 
 gem 'rack', '2.2.3'
-gem 'sinatra', '2.1.0', require: 'sinatra/base'
+gem 'sinatra', '2.2.0', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
 gem 'puma', '5.6.4'
