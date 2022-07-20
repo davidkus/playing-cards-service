@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-ruby File.read(".ruby-version").strip
+ruby File.read('.ruby-version').strip
 
 gem 'rack', '2.2.3.1'
 gem 'sinatra', '2.2.0', require: 'sinatra/base'
@@ -17,9 +19,9 @@ group :development, :test do
 end
 
 group :test do
-  gem "fuubar"
-  gem "rspec"
-  gem "rack-test"
-  gem 'simplecov', '0.21.2', :require => false
-  gem "codeclimate-test-reporter", require: nil
+  gem 'codeclimate-test-reporter', require: nil
+  gem 'fuubar'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'simplecov', '0.21.2', require: false
 end

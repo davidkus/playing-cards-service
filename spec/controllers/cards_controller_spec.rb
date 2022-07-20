@@ -1,13 +1,13 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe 'CardsController' do
-
   def app
     CardsController
   end
 
   describe 'GET cards' do
-
     subject(:get_cards) { get "/#{card_param}" }
 
     context 'invalid parameter provided' do
@@ -25,7 +25,7 @@ RSpec.describe 'CardsController' do
     end
 
     context 'invalid file provided' do
-      let (:card_param) { '1S' }
+      let(:card_param) { '1S' }
 
       it 'returns a 400' do
         get_cards
@@ -51,6 +51,5 @@ RSpec.describe 'CardsController' do
         expect(last_response.content_type).to eq 'image/png'
       end
     end
-
   end
 end

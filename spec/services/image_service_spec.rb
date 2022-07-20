@@ -1,15 +1,14 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe 'ImageService' do
-
   describe 'generate_image' do
+    subject(:generate_image) { ImageService.generate_image cards, expand: }
 
-    subject(:generate_image) { ImageService.generate_image cards, expand: expand }
-
-    let(:cards) { ['2H', '5D'] }
+    let(:cards) { %w[2H 5D] }
 
     context 'when not expanding' do
-
       let(:expand) { false }
 
       it 'does not expand the image' do
@@ -18,11 +17,9 @@ RSpec.describe 'ImageService' do
 
         expect(generated_image.first.signature).to eq base_image.first.signature
       end
-
     end
 
     context 'when expanding' do
-
       let(:expand) { true }
 
       it 'does expand the image' do
@@ -31,9 +28,6 @@ RSpec.describe 'ImageService' do
 
         expect(generated_image.first.signature).to eq base_image.first.signature
       end
-
     end
-
   end
-
 end

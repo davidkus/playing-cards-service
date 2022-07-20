@@ -1,13 +1,13 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe 'DiceController' do
-
   def app
     DiceController
   end
 
   describe 'GET dice' do
-
     subject(:get_dice) { get "/#{dice_param}" }
 
     context 'invalid parameter provided' do
@@ -32,6 +32,5 @@ RSpec.describe 'DiceController' do
         expect(last_response.content_type).to eq('image/png')
       end
     end
-
   end
 end
