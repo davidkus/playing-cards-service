@@ -26,7 +26,7 @@ GEM
       ast (~> 2.4.1)
     puma (5.6.4)
       nio4r (~> 2.0)
-    rack (2.2.4)
+    rack (2.2.6.3)
     rack-protection (2.2.1)
       rack
     rack-test (2.0.2)
@@ -86,7 +86,7 @@ DEPENDENCIES
   codeclimate-test-reporter (~> 1.0.0)
   fuubar (~> 2.5.0)
   puma (~> 5.6.0)
-  rack (~> 2.2.0)
+  rack (~> 2.2.6)
   rack-test (~> 2.0.0)
   require_all (~> 3.0.0)
   rmagick (~> 4.2.0)
