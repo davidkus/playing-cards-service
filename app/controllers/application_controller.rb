@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ApplicationController < Sinatra::Base
+class ApplicationController < Sinatra::Base # rubocop:disable Style/Documentation
   set :show_exceptions, :after_handler
 
   before do
