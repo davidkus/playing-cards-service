@@ -27,7 +27,7 @@ Retrieve a set of cards.
 ```
 GET {base}/cards/{cards}
 ```
-Example: https://playing-cards-service.herokuapp.com/cards/2H-3D-4C
+Example: https://playing-cards-service.fly.dev/cards/2H-3D-4C
 
 ### Retrieve Dice
 
@@ -35,7 +35,7 @@ Retrieve a set of dice
 ```
 GET {base}/dice/{dice}
 ```
-Example: https://playing-cards-service.herokuapp.com/dice/1F-2F-3F
+Example: https://playing-cards-service.fly.dev/dice/1F-2F-3F
 
 ## License
 
