@@ -19,7 +19,7 @@ module FileNameService
                'misc'
              when 'F'
                'dice'
-             else # rubocop:disable Lint/DuplicateBranch
+             else
                'misc'
              end
 
