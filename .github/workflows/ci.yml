@@ -17,6 +17,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install ImageMagick
+        run: |
+          mkdir -p "$HOME/.local/bin"
+          curl -O 'https://download.imagemagick.org/ImageMagick/download/binaries/magick'
+          chmod u+x magick
+          mv magick "$HOME/.local/bin"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Check ImageMagick Version
+        run: magick -version
+
       - uses: actions/checkout@v4
 
       - uses: ruby/setup-ruby@v1
