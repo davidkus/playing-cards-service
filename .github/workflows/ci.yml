@@ -20,9 +20,6 @@ jobs:
       - name: Install ImageMagick
         run: sudo apt install imagemagick
 
-      - name: Check ImageMagick Version
-        run: magick -version
-
       - uses: actions/checkout@v4
 
       - uses: ruby/setup-ruby@v1
