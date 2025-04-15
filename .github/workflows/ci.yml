@@ -17,8 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install ImageMagick
-        run: sudo apt install imagemagick
+      - uses: mfinelli/setup-imagemagick@v6
 
       - uses: actions/checkout@v4
 
