@@ -8,7 +8,7 @@ gem 'rack', '~> 3.1.8'
 gem 'sinatra', '~> 4.1.0', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
-gem 'puma', '~> 6.0.2'
+gem 'puma', '~> 6.4.3'
 
 gem 'rmagick', '~> 5.3.0'
 
