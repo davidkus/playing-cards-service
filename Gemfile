@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').strip
 
-gem 'rack', '~> 2.2.8'
-gem 'sinatra', '~> 3.1.0', require: 'sinatra/base'
+gem 'rack', '~> 3.1.8'
+gem 'sinatra', '~> 4.1.0', require: 'sinatra/base'
 gem 'sinatra-param', require: 'sinatra/param', github: 'davidkus/sinatra-param'
 
-gem 'puma', '~> 5.6.9'
+gem 'puma', '~> 6.0.2'
 
 gem 'rmagick', '~> 5.3.0'
 
