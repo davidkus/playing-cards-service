@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install ImageMagick
-        run: sudo apt-get install -y imagemagick
-
       - uses: actions/checkout@v4
+
+      - name: Install libmagickwand-dev
+        run: sudo apt-get install libmagickwand-dev
 
       - uses: ruby/setup-ruby@v1
         with:
